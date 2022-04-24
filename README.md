@@ -1,4 +1,5 @@
 # GoScrape 🐙:   Universal hltv.org demofile scraper
+[![Build and publish Python 🐍 distributions 📦 to PyPI](https://github.com/mo-cmyk/goscrape/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/mo-cmyk/goscrape/actions/workflows/publish-to-pypi.yml)
 
 Go scrape is a little open source project I created to make it easy to bulk download demofiles for the FPS CS:GO from the popular CS:GO fansite [hltv.org](hltv.org).
 
