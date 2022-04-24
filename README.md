@@ -5,7 +5,7 @@ Go scrape is a little open source project I created to make it easy to bulk down
 
 ## Installation in Python - PyPi release
 
-GoScrape is on PyPi, so you can use `pip` to install it.
+GoScrape is on [PyPi](https://pypi.org/project/goscrape/), so you can use `pip` to install it.
 
 ```bash
   pip install goscrape
