@@ -94,6 +94,6 @@ class MatchGatherer:
             }
 
             self.matches.append(match)
-            break
+
 
         return self.matches

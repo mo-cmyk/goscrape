@@ -1,11 +1,12 @@
 # GoScrape 🐙:   Universal hltv.org demofile scraper
+[![Build and publish Python 🐍 distributions 📦 to PyPI](https://github.com/mo-cmyk/goscrape/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/mo-cmyk/goscrape/actions/workflows/publish-to-pypi.yml)
 
 Go scrape is a little open source project I created to make it easy to bulk download demofiles for the FPS CS:GO from the popular CS:GO fansite [hltv.org](hltv.org).
 
 
 ## Installation in Python - PyPi release
 
-GoScrape is on PyPi, so you can use `pip` to install it.
+GoScrape is on [PyPi](https://pypi.org/project/goscrape/), so you can use `pip` to install it.
 
 ```bash
   pip install goscrape
