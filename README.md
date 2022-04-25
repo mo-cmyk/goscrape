@@ -87,7 +87,7 @@ The Objects in the resulting json are identified by their event id given as a ke
 
 ## Changelog
 
-### Version 0.1 (2022.04.22)
+### Version 0.1 (2022.04.24)
 
 - Initial release
 
