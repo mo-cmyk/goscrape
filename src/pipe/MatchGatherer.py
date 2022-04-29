@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 import logging
 
 SLEEP_BETWEEN_REQUESTS = 0.5
-EMERGENCY_SLEEP = 50
+EMERGENCY_SLEEP = 60
 
 
 class MatchGatherer:

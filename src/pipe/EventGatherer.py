@@ -13,7 +13,7 @@ from src.pipe.EventType import EventType
 from src.pipe.MatchGatherer import MatchGatherer
 
 SLEEP_BETWEEN_REQUESTS = 0.1
-EMERGENCY_SLEEP = 50
+EMERGENCY_SLEEP = 60
 
 
 class EventGatherer:

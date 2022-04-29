@@ -11,7 +11,7 @@ from src.pipe.MatchGatherer import MatchGatherer
 from tqdm import tqdm
 
 SLEEP_BETWEEN_REQUESTS = 0.5
-EMERGENCY_SLEEP = 50
+EMERGENCY_SLEEP = 60
 
 
 class DemoDownloader:
@@ -70,7 +70,7 @@ class DemoDownloader:
         if multiprocessing:
             print(f'Utilizing {cpu_count} core(s) 📡')
             with mp.Pool(cpu_count) as pool:
-                pool.starmap(self._download_file, zip(matches, event_id, output_file))
+                pool.starmap(self._download_file, zip(matches, itertools.repeat(event_id), itertools.repeat(output_file)))
                 
 
         else:
@@ -102,7 +102,9 @@ class DemoDownloader:
             matches = event.get('matches')
             
             if matches is None or len(matches) == 0:
+                print(f'No matches found for event: {event.get("event_data").get("event_name_full")}!')
                 continue
+            
             print(f'Found {len(matches)} match for event: {event.get("event_data").get("event_name_full")}! 🏋️‍♀️')
             
             

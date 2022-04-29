@@ -3,7 +3,7 @@ import os
 import sys
 
 __author__ = "Moritz Steigerwald"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __license__ = "MIT"
 
 from src.pipe.DemoDownloader import DemoDownloader

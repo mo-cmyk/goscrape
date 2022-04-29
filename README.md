@@ -88,7 +88,11 @@ The Objects in the resulting json are identified by their event id given as a ke
 
 ## Changelog
 
-### Version 0.1 (2022.04.24)
+### Version 0.1.1 (2022.04.29)
+
+- Bug Fixes on multiprocessed downloading
+
+### Version 0.1.0 (2022.04.24)
 
 - Initial release
 
