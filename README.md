@@ -88,6 +88,14 @@ The Objects in the resulting json are identified by their event id given as a ke
 
 ## Changelog
 
+### Version 0.1.3 (2022.09.22)
+
+- Fixed a bug where the package failed to gather the file name of the provided demo file while using the fetch command
+
+### Version 0.1.2 (2022.05.30)
+
+- Bug fixes and improvements
+
 ### Version 0.1.1 (2022.04.29)
 
 - Bug Fixes on multiprocessed downloading

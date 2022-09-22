@@ -3,9 +3,9 @@ import json
 import logging
 import multiprocessing as mp
 import os
-import re
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 import requests
 from src.pipe.MatchGatherer import MatchGatherer
@@ -37,23 +37,24 @@ class DemoDownloader:
                 assert r.status_code == 200
                 
                 # get filename from headers
-                d = r.headers['content-disposition']
-                fname = re.findall("filename=(.+)", d)[0]
+                file_url = r.url
+                parsed_file_url = urlparse(file_url)
+                fname = str(os.path.basename(parsed_file_url.path))
                 
                 #generate storage_path
                 file_location = os.path.join(path, fname)
-                if not fname.contains(".rar"):
+                if not ".rar" in fname:
                     file_location = f'{file_location}.rar'
                     
                 total_size_in_bytes = int(r.headers.get('content-length', 0))
-                block_size = 1024  # 1 Kibibyte
+                block_size = 1024  # 1 Kilobyte
                 progress_bar = tqdm(total=total_size_in_bytes,
                                     unit='iB', unit_scale=True, desc='Downloading')
                 
-                with open(file_location, 'w') as file:
+                with open(file_location, 'wb') as file:
                     for data in r.iter_content(block_size):
                         progress_bar.update(len(data))
-                    file.write(data)
+                        file.write(data)
                     progress_bar.close()
                     
                 print(f'File saved to {file_location}')

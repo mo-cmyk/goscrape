@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 
 __author__ = "Moritz Steigerwald"
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 __license__ = "MIT"
 
 name = 'goscrape'
