@@ -83,6 +83,8 @@ The Objects in the resulting json are identified by their event id given as a ke
 | MULTIPROCESSING | boolean       | whether multiprocessing should be utilized to speed up downloading                                  |                                                                        | optional (True if present)   |
 
 
+## Disclaimer
+This tool nor I have any affiliation with HLTV. I originally built this CLI to aid in my ability to download demos for scientific research purposes. I made it publicly availible because I thought it might benefit others as well. If you download a lot of demos the tool will automatically implement a sleep time to avoid a temporary cloudflar ban.
 
 
 
@@ -113,4 +115,7 @@ Any contributions you make are **greatly appreciated**.
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## Issued 
+If you expierience any issues please message me or raise an issue [here](https://github.com/mo-cmyk/goscrape/issues)
 
